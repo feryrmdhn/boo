@@ -1,9 +1,14 @@
 import { universeData } from '@/utils/universeData';
+import { Language, t } from '@/lang';
 
-export default function UniverseCard() {
+interface UniverseCardProps {
+    lang: Language;
+}
+
+export default function UniverseCard({ lang }: UniverseCardProps) {
     return (
         <div className="bg-black border border-gray-800 rounded-3xl p-4 h-full flex flex-col w-[25rem]">
-            <h2 className="text-white text-2xl font-bold mb-4">Alam Semesta</h2>
+            <h2 className="text-white text-2xl font-bold mb-4">{t(lang, 'home.universe')}</h2>
             <div className="space-y-2 overflow-y-auto scrollbar-hide flex-1">
                 {universeData.map((item) => (
                     <div

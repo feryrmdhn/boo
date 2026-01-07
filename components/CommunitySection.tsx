@@ -29,7 +29,7 @@ export default function CommunitySection() {
 
                 <div className="mb-4">
                     <h3 className="text-white text-sm mb-2">Pertanyaan Hari Ini</h3>
-                    <div className='flex justify-between items-center gap-x-2'>
+                    <div className='flex justify-between items-center'>
                         <p className="text-white text-xl font-bold leading-relaxed">
                             {dailyQuestion?.question || 'Loading...'}
                         </p>

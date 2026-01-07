@@ -1,31 +1,34 @@
 {
     "common": {
-        "welcome": "Welcome",
-        "error": "An error occurred",
-        "success": "Success",
-        "loading": "Loading...",
-        "cancel": "Cancel",
-        "save": "Save",
-        "delete": "Delete",
-        "edit": "Edit",
-        "back": "Back"
+        "search": "Search"
     },
-    "user": {
-        "name": "Name",
-        "email": "Email",
-        "password": "Password",
-        "users": "Users",
-        "createUser": "Create User",
-        "editUser": "Edit User",
-        "deleteUser": "Delete User",
-        "userCreated": "User created successfully",
-        "userUpdated": "User updated successfully",
-        "userDeleted": "User deleted successfully"
+    "nav": {
+        "home": "Home",
+        "match": "Match",
+        "message": "Message",
+        "profile": "Profile",
+        "personalityDatabase": "Personality Database",
+        "personalityTest": "Personality Test",
+        "source": "Source"
     },
-    "validation": {
-        "required": "This field is required",
-        "invalidEmail": "Invalid email address",
-        "passwordTooShort": "Password is too short",
-        "passwordMismatch": "Passwords do not match"
+    "home": {
+        "universe": "Universe",
+        "login": "LOGIN",
+        "relatedPosts": "Related Posts"
+    },
+    "pages": {
+        "matchDesc": "Match page...",
+        "messageDesc": "Message page...",
+        "profileDesc": "Profile page...",
+        "personalityDatabaseDesc": "Personality Database page...",
+        "personalityTestDesc": "Personality Test page...",
+        "sourceDesc": "Source page..."
+    },
+    "footer": {
+        "tagline": "We stand for love. 💙",
+        "terms": "Terms",
+        "privacy": "Privacy...",
+        "faq": "FAQ",
+        "tips": "Tips..."
     }
 }

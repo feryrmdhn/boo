@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { Menu, Search } from 'lucide-react';
 import { searchCategories } from '@/utils/searchCategories';
+import { Language, t } from '@/lang';
 
 interface HeaderProps {
     onToggleSidebar: () => void;
     onOpenAuth: () => void;
+    lang: Language;
 }
 
-export default function Header({ onToggleSidebar, onOpenAuth }: HeaderProps) {
+export default function Header({ onToggleSidebar, onOpenAuth, lang }: HeaderProps) {
     const [searchQuery, setSearchQuery] = useState('');
     const [showDropdown, setShowDropdown] = useState(false);
 
@@ -31,7 +33,7 @@ export default function Header({ onToggleSidebar, onOpenAuth }: HeaderProps) {
                         </div>
                         <input
                             type="text"
-                            placeholder="Cari"
+                            placeholder={t(lang, 'common.search')}
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             onFocus={() => setShowDropdown(true)}
@@ -62,7 +64,7 @@ export default function Header({ onToggleSidebar, onOpenAuth }: HeaderProps) {
                     onClick={onOpenAuth}
                     className="text-sm text-black bg-teal-400 shadow animated-shadow px-8 py-3 rounded-full text-center w-fit cursor-pointer hover:scale-103 active:scale-99 duration-500 focus:outline-none"
                 >
-                    MASUK
+                    {t(lang, 'home.login')}
                 </button>
             </div>
         </header>

@@ -1,31 +1,34 @@
 {
     "common": {
-        "welcome": "Selamat datang",
-        "error": "Ralat berlaku",
-        "success": "Berjaya",
-        "loading": "Memuatkan...",
-        "cancel": "Batal",
-        "save": "Simpan",
-        "delete": "Padam",
-        "edit": "Sunting",
-        "back": "Kembali"
+        "search": "Cari"
     },
-    "user": {
-        "name": "Nama",
-        "email": "E-mel",
-        "password": "Kata laluan",
-        "users": "Pengguna",
-        "createUser": "Cipta Pengguna",
-        "editUser": "Sunting Pengguna",
-        "deleteUser": "Padam Pengguna",
-        "userCreated": "Pengguna berjaya dicipta",
-        "userUpdated": "Pengguna berjaya dikemas kini",
-        "userDeleted": "Pengguna berjaya dipadamkan"
+    "nav": {
+        "home": "Laman Utama",
+        "match": "Padanan",
+        "message": "Mesej",
+        "profile": "Profil",
+        "personalityDatabase": "Pangkalan Data Personaliti",
+        "personalityTest": "Ujian Personaliti",
+        "source": "Sumber"
     },
-    "validation": {
-        "required": "Wajib diisi",
-        "invalidEmail": "Alamat e-mel tidak sah",
-        "passwordTooShort": "Kata laluan terlalu pendek",
-        "passwordMismatch": "Kata laluan tidak sepadan"
+    "home": {
+        "universe": "Alam Semesta",
+        "login": "LOG MASUK",
+        "relatedPosts": "Catatan Berkaitan"
+    },
+    "pages": {
+        "matchDesc": "Halaman Padanan...",
+        "messageDesc": "Halaman Mesej...",
+        "profileDesc": "Halaman Profil...",
+        "personalityDatabaseDesc": "Halaman Pangkalan Data Personaliti...",
+        "personalityTestDesc": "Halaman Ujian Personaliti...",
+        "sourceDesc": "Halaman Sumber..."
+    },
+    "footer": {
+        "tagline": "Kami berdiri untuk cinta. 💙",
+        "terms": "Terma",
+        "privacy": "Privasi...",
+        "faq": "Soalan Lazim",
+        "tips": "Petua..."
     }
 }

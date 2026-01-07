@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { languages } from '@/utils';
 
 interface Language {
@@ -7,9 +8,13 @@ interface Language {
 }
 
 export default function LanguageSelector() {
-    const [selectedLanguage, setSelectedLanguage] = useState<Language>(languages[0]);
+    const router = useRouter();
     const [isOpen, setIsOpen] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
+
+    // Get current language from URL path
+    const currentLangCode = router.asPath.split('/')[1] || 'id';
+    const selectedLanguage = languages.find(l => l.code === currentLangCode) || languages[0];
 
     useEffect(() => {
         function handleClickOutside(event: MouseEvent) {
@@ -28,8 +33,22 @@ export default function LanguageSelector() {
     }, [isOpen]);
 
     const handleSelect = (language: Language) => {
-        setSelectedLanguage(language);
         setIsOpen(false);
+
+        // Replace current language in path with new language
+        const currentPath = router.asPath;
+        const pathParts = currentPath.split('/');
+
+        // Check if first part is a valid language code
+        if (['id', 'en', 'ms'].includes(pathParts[1])) {
+            pathParts[1] = language.code;
+        } else {
+            // If no language in path, add it
+            pathParts.splice(1, 0, language.code);
+        }
+
+        const newPath = pathParts.join('/') || `/${language.code}`;
+        router.push(newPath);
     };
 
     return (
