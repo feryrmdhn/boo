@@ -14,7 +14,7 @@ export default function Sidebar({ isOpen }: SidebarProps) {
 
     return (
         <aside
-            className={`bg-black border-r border-gray-800 transition-all duration-300 flex-shrink-0 ${isOpen ? 'w-64' : 'w-0'
+            className={`bg-black transition-all duration-300 flex-shrink-0 ${isOpen ? 'w-64' : 'w-0'
                 } overflow-hidden`}
         >
             <div className="flex flex-col h-full w-64">
