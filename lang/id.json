@@ -1,0 +1,31 @@
+{
+    "common": {
+        "welcome": "Selamat datang",
+        "error": "Terjadi kesalahan",
+        "success": "Berhasil",
+        "loading": "Memuat...",
+        "cancel": "Batal",
+        "save": "Simpan",
+        "delete": "Hapus",
+        "edit": "Edit",
+        "back": "Kembali"
+    },
+    "user": {
+        "name": "Nama",
+        "email": "Email",
+        "password": "Kata sandi",
+        "users": "Pengguna",
+        "createUser": "Buat Pengguna",
+        "editUser": "Edit Pengguna",
+        "deleteUser": "Hapus Pengguna",
+        "userCreated": "Pengguna berhasil dibuat",
+        "userUpdated": "Pengguna berhasil diperbarui",
+        "userDeleted": "Pengguna berhasil dihapus"
+    },
+    "validation": {
+        "required": "Wajib diisi",
+        "invalidEmail": "Email tidak valid",
+        "passwordTooShort": "Kata sandi terlalu pendek",
+        "passwordMismatch": "Kata sandi tidak cocok"
+    }
+}

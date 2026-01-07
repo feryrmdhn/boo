@@ -1,0 +1,31 @@
+{
+    "common": {
+        "welcome": "Selamat datang",
+        "error": "Ralat berlaku",
+        "success": "Berjaya",
+        "loading": "Memuatkan...",
+        "cancel": "Batal",
+        "save": "Simpan",
+        "delete": "Padam",
+        "edit": "Sunting",
+        "back": "Kembali"
+    },
+    "user": {
+        "name": "Nama",
+        "email": "E-mel",
+        "password": "Kata laluan",
+        "users": "Pengguna",
+        "createUser": "Cipta Pengguna",
+        "editUser": "Sunting Pengguna",
+        "deleteUser": "Padam Pengguna",
+        "userCreated": "Pengguna berjaya dicipta",
+        "userUpdated": "Pengguna berjaya dikemas kini",
+        "userDeleted": "Pengguna berjaya dipadamkan"
+    },
+    "validation": {
+        "required": "Wajib diisi",
+        "invalidEmail": "Alamat e-mel tidak sah",
+        "passwordTooShort": "Kata laluan terlalu pendek",
+        "passwordMismatch": "Kata laluan tidak sepadan"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "common": {
+        "welcome": "Welcome",
+        "error": "An error occurred",
+        "success": "Success",
+        "loading": "Loading...",
+        "cancel": "Cancel",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "back": "Back"
+    },
+    "user": {
+        "name": "Name",
+        "email": "Email",
+        "password": "Password",
+        "users": "Users",
+        "createUser": "Create User",
+        "editUser": "Edit User",
+        "deleteUser": "Delete User",
+        "userCreated": "User created successfully",
+        "userUpdated": "User updated successfully",
+        "userDeleted": "User deleted successfully"
+    },
+    "validation": {
+        "required": "This field is required",
+        "invalidEmail": "Invalid email address",
+        "passwordTooShort": "Password is too short",
+        "passwordMismatch": "Passwords do not match"
+    }
+}
