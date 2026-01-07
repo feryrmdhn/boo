@@ -19,7 +19,7 @@ export default function CommunitySection() {
     }
 
     return (
-        <div className="flex flex-col gap-4 w-1/2">
+        <div className="w-full flex flex-col gap-4">
             <div className="bg-black border border-gray-800 rounded-3xl p-6">
                 <div className="flex items-center justify-center mb-4">
                     <span className="bg-teal-400 text-black text-xs font-semibold px-4 py-2 rounded-full">
@@ -29,7 +29,7 @@ export default function CommunitySection() {
 
                 <div className="mb-4">
                     <h3 className="text-white text-sm mb-2">Pertanyaan Hari Ini</h3>
-                    <div className='flex justify-between items-center'>
+                    <div className='flex justify-between items-center gap-x-2'>
                         <p className="text-white text-xl font-bold leading-relaxed">
                             {dailyQuestion?.question || 'Loading...'}
                         </p>

@@ -40,7 +40,7 @@ const mockContent: ContentData[] = [
         name: 'Stephanie',
         personality_type: 'ENFP',
         topic: 'Lifestyle',
-        post: '/api/dummy-post.jpg',
+        post: '',
         title: 'Mindful Living',
         data: {
             total_like: 189,
@@ -70,7 +70,7 @@ const mockContent: ContentData[] = [
         name: 'Jessica',
         personality_type: 'ESFJ',
         topic: 'Food',
-        post: '/api/dummy-post.jpg',
+        post: '',
         title: 'Heritage Cooking',
         data: {
             total_like: 328,

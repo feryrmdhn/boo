@@ -13,15 +13,15 @@ export default function Layout({ children }: LayoutProps) {
     const [showSidebar, setShowSidebar] = useState(true);
 
     return (
-        <div className="min-h-screen bg-black flex flex-col">
+        <div className="h-screen bg-black flex flex-col overflow-hidden">
             <Header
                 onToggleSidebar={() => setShowSidebar(!showSidebar)}
                 onOpenAuth={() => setShowAuthModal(true)}
             />
 
-            <div className="flex flex-1">
+            <div className="flex flex-1 overflow-hidden">
                 <Sidebar isOpen={showSidebar} />
-                <main className="flex-1 px-4 py-8">
+                <main className="flex-1 px-4 py-4 overflow-hidden">
                     {children}
                 </main>
             </div>
