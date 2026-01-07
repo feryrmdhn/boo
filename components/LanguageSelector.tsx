@@ -12,7 +12,6 @@ export default function LanguageSelector() {
     const [isOpen, setIsOpen] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
 
-    // Get current language from URL path
     const currentLangCode = router.asPath.split('/')[1] || 'id';
     const selectedLanguage = languages.find(l => l.code === currentLangCode) || languages[0];
 
@@ -35,7 +34,6 @@ export default function LanguageSelector() {
     const handleSelect = (language: Language) => {
         setIsOpen(false);
 
-        // Replace current language in path with new language
         const currentPath = router.asPath;
         const pathParts = currentPath.split('/');
 
@@ -43,7 +41,6 @@ export default function LanguageSelector() {
         if (['id', 'en', 'ms'].includes(pathParts[1])) {
             pathParts[1] = language.code;
         } else {
-            // If no language in path, add it
             pathParts.splice(1, 0, language.code);
         }
 

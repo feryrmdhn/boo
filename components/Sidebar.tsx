@@ -78,10 +78,10 @@ export default function Sidebar({ isOpen, lang }: SidebarProps) {
                     <div className="text-gray-400 text-xs space-y-1 mb-2">
                         <p>{t(lang, 'footer.tagline')}</p>
                         <div className="flex gap-4">
-                            <Link href="#" className="hover:text-gray-300">{t(lang, 'footer.terms')}</Link>
-                            <Link href="#" className="hover:text-gray-300">{t(lang, 'footer.privacy')}</Link>
-                            <Link href="#" className="hover:text-gray-300">{t(lang, 'footer.faq')}</Link>
-                            <Link href="#" className="hover:text-gray-300">{t(lang, 'footer.tips')}</Link>
+                            <button onClick={(e) => e.preventDefault()} className="cursor-pointer hover:text-gray-300">{t(lang, 'footer.terms')}</button>
+                            <button onClick={(e) => e.preventDefault()} className="cursor-pointer hover:text-gray-300">{t(lang, 'footer.privacy')}</button>
+                            <button onClick={(e) => e.preventDefault()} className="cursor-pointer hover:text-gray-300">{t(lang, 'footer.faq')}</button>
+                            <button onClick={(e) => e.preventDefault()} className="cursor-pointer hover:text-gray-300">{t(lang, 'footer.tips')}</button>
                         </div>
                     </div>
 

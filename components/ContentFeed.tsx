@@ -83,7 +83,6 @@ export default function ContentFeed() {
                         <span className="text-gray-500 text-sm">2d</span>
                     </div>
 
-                    {/* Content */}
                     <div className="mb-4">
                         <h3 className="text-white text-lg font-medium mb-2">{content.title}</h3>
                         <p className="text-gray-400 text-sm">
@@ -91,7 +90,6 @@ export default function ContentFeed() {
                         </p>
                     </div>
 
-                    {/* Image */}
                     {content.post && (
                         <div className="relative w-full h-96 rounded-2xl overflow-hidden mb-4">
                             <Image
@@ -103,7 +101,6 @@ export default function ContentFeed() {
                         </div>
                     )}
 
-                    {/* Actions */}
                     <div className="flex items-center justify-between">
                         <div className="flex items-center gap-4">
                             <button className="flex items-center gap-2 text-gray-400 hover:text-red-500 transition-colors">

@@ -15,7 +15,6 @@ export default function Layout({ children }: LayoutProps) {
     const [showSidebar, setShowSidebar] = useState(true);
     const router = useRouter();
 
-    // Get lang from URL path directly during render (no useEffect needed)
     const pathLang = router.asPath.split('/')[1];
     const lang: Language = ['id', 'en', 'ms'].includes(pathLang) ? pathLang as Language : 'id';
 

@@ -12,6 +12,8 @@ A Next.js-based social platform for personality-based connections and community 
 - **Related Posts**: Trending questions and discussions
 - **Mock APIs**: Content and news endpoints for development
 
+> **Note**: This application is optimized for desktop view only. Mobile and tablet responsive layouts are not yet supported.
+
 ## Tech Stack
 
 - **Framework**: Next.js 16.1.1
@@ -46,7 +48,7 @@ npm start
 ## Project Structure
 
 ```
-├── components/          # React components
+├── components/         # React components
 │   ├── Layout.tsx      # Main layout with header & sidebar
 │   ├── ContentFeed.tsx # Post feed component
 │   ├── NewsFeed.tsx    # Related posts sidebar
